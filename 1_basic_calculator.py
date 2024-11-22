@@ -7,39 +7,39 @@ if you’d like more advanced tasks or additional hints for any of these assignm
 
 
 while True:
-     operation=input('''CHOOSE AN OPERATOR:
+     operation = input('''CHOOSE AN OPERATOR:
                     "+", "-", "*", "/", 
                     "remainder=%", 
                     "exponentiation=**", 
                     "floor division=//",
                     "factorial=!"
                     ''')
-     if operation=='!':
-          fac=int(input('number: '))
+     if operation == '!':
+          fac = int(input('number: '))
           for i in range(1, fac+1):
                i *= fac
           print(i)
           break
      elif operation in ["+", "-", "*", "/", "**", "//"]:
-          first_number=float(input('1st number: '))
-          second_number=float(input('2st number: '))
-          if operation=="+":
-               print(first_number+second_number)
+          first_number = float(input('1st number: '))
+          second_number = float(input('2st number: '))
+          if operation == "+":
+               print(first_number + second_number)
                break
-          elif operation=="-":
-               print(first_number-second_number)
+          elif operation == "-":
+               print(first_number - second_number)
                break
-          elif operation=="*":
-               print(first_number*second_number)
+          elif operation == "*":
+               print(first_number * second_number)
                break
-          elif operation=="/":
-               print(first_number/second_number)
+          elif operation == "/":
+               print(first_number / second_number)
                break
-          elif operation=="**":
-               print(first_number**second_number)
+          elif operation == "**":
+               print(first_number ** second_number)
                break
-          elif operation=="//":
-               print(first_number//second_number)
+          elif operation == "//":
+               print(first_number // second_number)
                break
      else:
-          print('That operator is invalid, try again! ')
+          print('That operator is invalid, try again!')
